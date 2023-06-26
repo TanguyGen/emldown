@@ -21,6 +21,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <li><a href="#temporal">Temporal coverage</a></li>
             <li><a href="#geographic">Geographic coverage</a></li>
             <li><a href="#datatable">Data tables</a></li>
+		<li><a href="#spatraster">Spatial Rasters</a></li>
+		<li><a href="#spatvector">Spatial Vectors</a></li>
             <li><a href="#otherentity">Custom units</a></li>
             <li><a href="#otherentity">Other entities</a></li>
           </ul>

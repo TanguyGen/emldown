@@ -9,6 +9,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:include href="taxonomic_coverage.xsl"/>
 <xsl:include href="dataset.xsl"/>
 <xsl:include href="datatable.xsl"/>
+<xsl:include href="spatraster.xsl"/>
+<xsl:include href="spatvector.xsl"/>
 <xsl:include href="units.xsl"/>
 <xsl:include href="otherentity.xsl"/>
 <xsl:include href="footer.xsl"/>
@@ -42,9 +44,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
      
       <xsl:call-template name="addmap"/>
 
-<!--
+
       <xsl:call-template name="geographic_coverage"/>
--->
+
     </div><!-- /.container -->
 
     <div class="container" id="taxonomic">
@@ -53,12 +55,25 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 Taxonomic coverage</h3>
       <xsl:call-template name="taxonomic_coverage"/>
   </div><!-- /.container -->
-  
      <div class="container" id="datatable">
          <h3>   
 <span class="glyphicon glyphicon-list-alt"></span>
  Data tables</h3>
       <xsl:call-template name="datatable"/>
+    </div><!-- /.container -->
+    
+    <div class="container" id="spatraster">
+         <h3>   
+<span class="glyphicon glyphicon-list-alt"></span>
+ Spatial Rasters</h3>
+      <xsl:call-template name="spatraster"/>
+    </div><!-- /.container -->
+    
+    <div class="container" id="spavector">
+         <h3>   
+<span class="glyphicon glyphicon-list-alt"></span>
+ Spatial Vectors</h3>
+      <xsl:call-template name="spatvector"/>
     </div><!-- /.container -->
     
     <div class="container" id="units">
